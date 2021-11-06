@@ -56,6 +56,9 @@
 		D27C673427368A4900F40C51 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				D27C674B27368C9700F40C51 /* Models */,
+				D27C674A27368C9200F40C51 /* Views */,
+				D27C674D27368CE100F40C51 /* Controllers */,
 				D27C673527368A4900F40C51 /* AppDelegate.swift */,
 				D27C673727368A4900F40C51 /* SceneDelegate.swift */,
 				D27C673927368A4900F40C51 /* ViewController.swift */,
@@ -65,6 +68,27 @@
 				D27C674327368A5B00F40C51 /* Info.plist */,
 			);
 			path = Crypto;
+			sourceTree = "<group>";
+		};
+		D27C674A27368C9200F40C51 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D27C674B27368C9700F40C51 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D27C674D27368CE100F40C51 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
