@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
     private var testData = CryptoModels.testCrypto
     
@@ -16,25 +16,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var valueLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        firstDataLabels(i: randomElementsInArray(data: testData))
+        FirstDataLabels.dataFirstView.firstData(i: RandomElementsInArray.randomElements.randomElementsMethod(data: testData), name: nameLabel, data: testData, ticker: tickerLabel, value: valueLabel)
     }
-    
+
     @IBAction func buttonPressed(_ sender: Any) {
-        firstDataLabels(i: randomElementsInArray(data: testData))
-    }
-    
-    
-    //MARK: Рандомный элемент из массива
-    func randomElementsInArray(data: [CryptoModels])->Int{
-        let randomCount = Int.random(in: 0..<data.count)
-        return randomCount
-    }
-    
-    //MARK: Первый элемент при загрузке экрана
-    func firstDataLabels(i: Int){
-        nameLabel.text = testData[i].name
-        tickerLabel.text = testData[i].ticer
-        valueLabel.text = String(testData[i].value)
+        FirstDataLabels.dataFirstView.firstData(i: RandomElementsInArray.randomElements.randomElementsMethod(data: testData), name: nameLabel, data: testData, ticker: tickerLabel, value: valueLabel)
     }
 }
 
